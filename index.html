@@ -73,7 +73,7 @@
       <div class="form-entry">
         <form action="">
     
-          <div class="elements" id="Element1">
+            <div class="elements" id="Element1">
             <label for="SchoolUDISE">School UDISE</label> <span>*</span><br />
             <input
               type="text"
@@ -84,41 +84,52 @@
             />
           </div>
           <div class="elements" id="Element2">
-            <label for="SchoolName"
-              >School Name (Will be Printed on certificate)</label
-            >
+            <label for="SchoolName">School Name (Will be Printed on certificate)</label>
             <span>*</span><br />
-            <input type="text" placeholder="Enter your school Name" required />
+            <input 
+            type="text" 
+            placeholder="Enter your school Name" 
+            pattern="[a-zA-Z]+" 
+            title=" Alphabet Only "
+            required />
           </div>
           <div class="elements" id="Element3">
             <label for="District">Select District</label>
             <span>*</span><br />
-            <select id="District" name="District" required>
+            <select id="District"  class="notranslate" name="District" required>
               <option value="" disabled selected>Please Select</option>
               <option value="D1">D1</option>
               <option value="D2">D2</option>
               <option value="D3">D3</option>
               <option value="D4">D4</option>
             </select>
-          </div>
+          </div> 
 
           <div class="elements" id="Element4">
             <label for="taluka">Taluka</label>
             <span>*</span><br />
-            <input type="text" placeholder="Mention Taluka" required />
+            <input type="text" 
+            placeholder="Mention Taluka"
+            title=" Alphabet Only "
+            pattern="[a-zA-Z]+"  
+            required />
           </div>
-
+ 
           <div class="elements" id="Element5">
             <label for="FullName">Your Name</label>
             <span>*</span><br />
-            <input type="text" placeholder="Full-Name" required />
+            <input type="text" 
+            placeholder="Full-Name"
+            title=" Alphabet Only "
+            pattern="[a-zA-Z]+" 
+            required />
           </div>
           <div class="elements" id="Element6">
             <label for="Designation">Designation</label>
             <span>*</span><br />
-            <select id="Designation" name="Designation" required>
-              <option value="" disabled selected>Select your option</option>
-              <option value="Desig">Principal</option>
+            <select class="notranslate" id="Designation" name="Designation" required>
+              <option value="disabled selected" >Select your option</option>
+              <option  value="Desig">Principal</option>
               <option value="Desig">Teacher</option>
               <option value="Desig">Trusty</option>
               <option value="Desig">Others</option>
@@ -129,24 +140,25 @@
             <span>*</span><br />
             <input
               type="email"
-              name=""
-              id=""
               placeholder="example@example.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required
             />
-          </div>
+          </div> 
 
+          
+          
           <div class="elements" id="Element8">
             <label for="Mobile">Mobile</label>
             <span>*</span><br />
             <input
-              type="number"
-              name=""
-              id=""
+              type="tel"
               placeholder="10 digit No."
+              pattern="[0-9]{10}"
+              title="10 Digit Mobile No."
               required
             />
-          </div>
+          </div> 
 
           <br />
           <div class="submitbtn mx-auto">
