@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Work+Sans:wght@500&display=swap");
+body {
+  background-color: white;
+  margin-bottom: 10%;
+}
+
+.logo {
+  margin: 10px 0px 14px 121px;
+}
+
+.container {
+  background-color: #3ee577;
+
+  margin: 10px 0;
+  width: 50%;
+  border: 2px solid #333538;
+  box-shadow: -9px 12px 35px #626363;
+  color: white;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #3d1df5;
+  background: transparent;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(235, 235, 235);
+  opacity: 1; /* Firefox */
+  font-weight: 500;
+}
+
+select {
+  border: none;
+  border-bottom: 2px solid #3d1df5;
+  background: transparent;
+}
+
+label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+span {
+  color: red;
+}
+.form-entry {
+  margin-top: 40px;
+  padding: 9px 0 0 50px;
+}
+
+.elements {
+  margin-top: 32px;
+}
+
+.submitbtn {
+  width: 12%;
+  margin-bottom: 18px;
+}
+
+button {
+  display: inline-block !important;
+
+  border-radius: 20px !important;
+  background-color: white !important;
+  border: 3px solid #3d1df5 !important;
+
+  font-family: "Work Sans", sans-serif !important;
+}
+button:hover {
+  background-color: #3d1df5 !important ;
+  color: white !important;
+}
+
+#img_2 {
+  padding-top: 7%;
+}
+
+.languages {
+  display: inline-block;
+  position: relative;
+  left: 68%;
+  margin-top: 15px;
+  background-color: #28df56 !important;
+  color: white !important;
+  padding: 16px !important;
+  font-size: 16px !important;
+
+  cursor: pointer !important;
+  border: 4px solid white !important;
+  border-radius: 8px !important;
+}
